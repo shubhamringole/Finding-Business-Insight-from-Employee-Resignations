@@ -1,6 +1,6 @@
 # Finding-Business-Insight-from-Employee-Resignations
 Introduction to the Project
-
+![alt text](https://github.com/shubhamringole/Finding-Business-Insight-from-Employee-Resignations/blob/main/Dashboard%201.png)
 
 Aim: 
 
