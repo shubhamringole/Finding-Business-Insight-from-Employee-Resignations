@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employe Attrition Prediction</title>
+</head>
+<style>
+    h1 {
+      color: blue;
+      font-family: verdana;
+      font-size: 300%;
+    
+    }
+    p  {
+      color: red;
+      font-family: courier;
+      font-size: 160%;
+    }
+    </style>
+<body>
+    <h1>Employee Attrition Predictor</h1>
+    {% if result %}
+        <h2>{{ result }}</h2>
+    {%endif%}
+
+    <form method="POST", action="/predict">
+        <label>Age</label><br>
+        <input type="number" name="Age"><br><br>
+
+        <label>BusinessTravel</label><br>
+        <input type="number" name="BusinessTravel"><br><br>
+
+        <label>DailyRate</label><br>
+        <input type="number" name="DailyRate"><br><br>
+
+        <label>Department</label><br>
+        <input type="number" name="Department"><br><br>
+
+        <label>DistanceFromHome</label><br>
+        <input type="number" name="DistanceFromHome"><br><br>
+
+        <label>Education</label><br>
+        <input type="number" name="Education"><br><br>
+
+        <label>EducationField</label><br>
+        <input type="number" name="EducationField"><br><br>
+
+        <label>EnvironmentSatisfaction</label><br>
+        <input type="number" name="EnvironmentSatisfaction"><br><br>
+
+        <label>Gender</label><br>
+        <input type="number" name="Gender"><br><br>
+
+        <label>HourlyRate</label><br>
+        <input type="number" name="HourlyRate"><br><br>
+
+
+        <label>JobInvolvement</label><br>
+        <input type="number" name="JobInvolvement"><br><br>
+
+        <label>JobLevel</label><br>
+        <input type="number" name="JobLevel"><br><br>
+
+        <label>JobRole</label><br>
+        <input type="number" name="JobRole"><br><br>
+
+        <label>JobSatisfaction</label><br>
+        <input type="number" name="JobSatisfaction"><br><br>
+
+        <label>MaritalStatus</label><br>
+        <input type="number" name="MaritalStatus"><br><br>
+
+        <label>MonthlyIncome</label><br>
+        <input type="number" name="MonthlyIncome"><br><br>
+
+        <label>MonthlyRate</label><br>
+        <input type="number" name="MonthlyRate"><br><br>
+
+        <label>NumCompaniesWorked</label><br>
+        <input type="number" name="NumCompaniesWorked"><br><br>
+
+        <label>OverTime</label><br>
+        <input type="number" name="OverTime"><br><br>
+
+        <label>PercentSalaryHike</label><br>
+        <input type="number" name="PercentSalaryHike"><br><br>
+
+        <label>PerformanceRating</label><br>
+        <input type="number" name="PerformanceRating"><br><br>
+
+        <label>RelationshipSatisfaction</label><br>
+        <input type="number" name="RelationshipSatisfaction"><br><br>
+
+        <label>StockOptionLevel</label><br>
+        <input type="number" name="StockOptionLevel"><br><br>
+
+        <label>TotalWorkingYears</label><br>
+        <input type="number" name="TotalWorkingYears"><br><br>
+
+        <label>TrainingTimesLastYear</label><br>
+        <input type="number" name="TrainingTimesLastYear"><br><br>
+
+        <label>WorkLifeBalance</label><br>
+        <input type="number" name="WorkLifeBalance"><br><br>
+
+        <label>YearsAtCompany</label><br>
+        <input type="number" name="YearsAtCompany"><br><br>
+
+        <label>YearsInCurrentRole</label><br>
+        <input type="number" name="YearsInCurrentRole"><br><br>
+
+        <label>YearsSinceLastPromotion</label><br>
+        <input type="number" name="YearsSinceLastPromotion"><br><br>
+
+        <label>YearsWithCurrManager</label><br>
+        <input type="number" name="YearsWithCurrManager"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+
+
+    </form>
+</body>
+</html>
